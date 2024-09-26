@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitJourney Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FitJourney Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#plans">Fitness Plans</a></li>
+                    <li><a href="#sessions">Virtual Training</a></li>
+                    <li><a href="#progress">Progress Tracker</a></li>
+                    <li><a href="#tips">Fitness Tips</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle">Switch to Dark Mode</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Your Fitness Journey</h2>
+                <p>Get started by setting your fitness goals and finding the best plan for you.</p>
+                <img src="anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg" alt="Fitness Journey" class="hero-img">
+            </div>
+        </section>
+
+        <section id="plans">
+            <div class="container">
+                <h2>Personalized Fitness Plans</h2>
+                <form id="goalForm">
+                    <label for="goal">Select your fitness goal:</label>
+                    <select id="goal" name="goal">
+                        <option value="weightLoss">Weight Loss</option>
+                        <option value="muscleGain">Muscle Gain</option>
+                        <option value="endurance">Endurance</option>
+                    </select>
+                    <button type="button" onclick="showPlan()">Get Plan</button>
+                </form>
+                <div id="planResult" class="result-box"></div>
+            </div>
+        </section>
+
+        <section id="sessions">
+            <div class="container">
+                <h2>Virtual Training Sessions</h2>
+                <button onclick="startSession()">Start Virtual Training</button>
+                <div id="sessionOutput" class="result-box"></div>
+                <img src="meghan-holmes-wy_L8W0zcpI-unsplash.jpg" alt="Virtual Training" class="session-img">
+            </div>
+        </section>
+
+        <section id="progress">
+            <div class="container">
+                <h2>Progress Tracker</h2>
+                <label for="progressInput">Enter your progress:</label>
+                <input type="number" id="progressInput" placeholder="Enter your progress">
+                <button onclick="trackProgress()">Track</button>
+                <div id="progressOutput" class="result-box"></div>
+                <img src="danielle-cerullo-CQfNt66ttZM-unsplash.jpg" alt="Progress Tracker" class="progress-img">
+            </div>
+        </section>
+
+        <section id="tips">
+            <div class="container">
+                <h2>Expert Fitness Tips</h2>
+                <div class="tips-container">
+                    <div class="tip">
+                        <h3>General Fitness</h3>
+                        <p>Stay consistent with your workouts and balanced diet.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Nutrition</h3>
+                        <p>Eat a variety of foods to get all essential nutrients.</p>
+                    </div>
+                    <div class="tip">
+                        <h3>Hydration</h3>
+                        <p>Drink plenty of water throughout the day to stay hydrated.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Customized Fitness Training</p>
+            <img src="victor-freitas-WvDYdXDzkhs-unsplash.jpg" alt="Footer Background" class="footer-img">
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
